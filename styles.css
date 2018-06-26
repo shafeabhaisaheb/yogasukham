@@ -1,0 +1,426 @@
+/* MED PURPLE #64413B 
+ LIGHT PURPLE #89637A
+ OFF WHITE #DFD4BC / #EDE0DE
+ DARK #3E3137
+ BLUE #7077AF
+ LIGHT BLUE #96B4D5
+
+ #70545e */
+
+ body {
+	font-family: 'Raleway', sans-serif !important;
+ }
+
+ h1,h2,h3 {
+	font-family: 'Yatra One', cursive !important;
+
+ }
+
+ h4, h5, h6 {
+ 	font-family: 'Comfortaa', cursive !important; 
+ }
+
+ nav {
+ 	background-color:white;
+ }
+
+ .parallax {
+ 	height:500px;
+ 	background-attachment:fixed;
+ 	background-size:cover;
+ 	background-position:center;
+ 	background-repeat:no-repeat;
+ 	color:white;
+ }
+
+ #plax1 {
+ 	background-image:url('img/img2.jpg');
+ 	text-transform:uppercase;
+ }
+
+ #plax2 {
+ 	background-image:url('img/img1.jpg');
+ }
+
+#plax3 {
+	background-image:url('img/piccandle2.jpg');
+}
+
+#plax4 {
+	background-image:url('img/img14.jpg');
+}
+
+ .content {
+ 	background: white;
+ 	color:black;
+ }
+
+.break {
+	color:white;
+	background-color: #3E3137;
+	letter-spacing:3px;
+	font-size:0.8em;
+}
+
+.hidden {
+	display:none !important;
+}
+
+.thumb {
+	width:35%;
+	border-radius:30px;
+ }
+
+ footer a {
+ 	color:#70545e;
+ }
+
+ footer a:hover, a:focus {
+ 	color:#64413B;
+ }
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+
+	h1, h2 {
+		font-size:35px;
+	}
+
+	h6 {
+		font-size:20px;
+	}
+
+	#plax1 h1 {
+		font-size:60px;
+	}
+
+	#plax1 h4 {
+		font-size:18px;
+		letter-spacing:3px;
+	}
+
+	#plax2 .description, #plax4 .description {
+		margin-bottom:auto !important;
+		padding:80px 10px 0px 20px;
+		width:75%;
+	}
+
+	#plax3 .description {
+		margin-bottom:auto !important;
+		padding:80px 20px 0px 10px;
+		width:75%;
+	}
+
+	#asana img {
+		display:none;
+	}
+
+	#dhwani {
+		padding-top:20px !important;
+	}
+
+	#dhwani .imgholder, #ahara .imgholder {
+		overflow:hidden;
+		margin:0 0 20px 0;
+		width:800px;
+	}
+
+	#dhwani .imgholder img {
+		display:block;
+		width:100%;
+		margin:-38% 0;
+	}
+
+	.thumb {
+		width:25%;
+	}
+
+	.readmore {
+		display:none !important;
+	}
+
+	#collapseOne {
+		display:block !important;
+	}
+
+	#collapseTwo {
+		display:block !important;
+	}
+
+	#collapseThree {
+		display:block !important;
+	}
+
+	#ahara .imgholder img {
+		display:block;
+		width:100%;
+		margin:-23% 0;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	h1, h2 {
+		font-size:40px;
+	}
+
+	h6 {
+		font-size:25px;
+	}
+
+	#plax1 h1 {
+		font-size:65px;
+	}
+
+	#plax1 h4 {
+		font-size:18px;
+		letter-spacing:3px;
+	}
+
+	#plax2 .description, #plax4 .description {
+		margin-bottom:auto !important;
+		padding:80px 10px 0px 20px;
+		width:75%;
+	}
+
+	#plax3 .description {
+		margin-bottom:auto !important;
+		padding:80px 20px 0px 10px;
+		width:75%;
+	}
+
+	.thumb {
+		width:23%;
+	}
+
+	.readmore {
+		display:none !important;
+	}
+
+	.parallax {
+		height:600px;
+	}
+
+	#collapseOne {
+		display:block !important;
+	}
+
+	#collapseTwo {
+		display:block !important;
+	}
+
+	#collapseThree {
+		display:block !important;
+	}
+
+	.parallax div:first-child {
+		padding:20px 45px;
+	}
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+	h1, h2 {
+		font-size:40px;
+	}
+
+	h6 {
+		font-size:25px;
+	}
+
+	#plax2 .description, #plax4 .description {
+		margin-bottom:auto !important;
+		padding:80px 10px 0px 20px;
+		width:75%;
+	}
+
+	#plax3 .description {
+		margin-bottom:auto !important;
+		padding:80px 20px 0px 10px;
+		width:75%;
+	}
+
+
+	#plax1 h1 {
+		font-size:100px;
+	}
+
+	#plax1 h4 {
+		font-size:30px;
+		letter-spacing:3px;
+	}
+
+	.thumb {
+		width:23%;
+	}
+
+	.parallax {
+		height:700px;
+	}
+
+	#asana div {
+		padding:30px;
+	}
+
+	#dhwani {
+		padding:80px 100px !important;
+	}
+
+	#ahara {
+		padding:0px !important;
+	}
+
+	.readmore {
+		display:none !important;
+	}
+
+	#collapseOne {
+		display:block !important;
+	}
+
+	#collapseTwo {
+		display:block !important;
+	}
+
+	#collapseThree {
+		display:block !important;
+	}
+
+	#overlayimg {
+
+		width:100%;
+	}
+	
+	#textoverlay {
+		background-color:white;
+		padding:60px !important;
+		position:absolute;
+		left:40%;
+		transform:translate(-55%, 110%);
+	}	
+	
+}
+
+/* Extra large devices (large desktops, 1012px and up) */
+@media (min-width: 1072px) {
+
+	#plax1 h1 {
+		font-size:120px;
+	}
+
+	#asana, #dhwani {
+		width:50% !important;
+		position:absolute;
+		padding:25px 25px 15px 25px!important;
+	}
+
+	#asana {
+		height:450px;
+	}
+
+	#asana h6, #ahara h6 {
+		font-size:20px;
+		line-height:5px;
+		padding-bottom:5px;
+	}
+
+	#plax2 {
+		height:450px;
+	}
+
+	#plax3 {
+		height:1000px;
+	}
+
+	#plax4 {
+		height: 600px;
+	}
+
+	#asana h2, #plax2 h1, #plax3 h1, #dhwani h1, #ahara h2, #plax4 h1 {
+		font-size:60px;
+	}
+
+	#asana h6, #plax2 h6, #plax3 h6, #dhwani h6, #ahara h6, #plax4 h6 {
+		font-size:30px;
+		line-height:5px;
+		padding-right:15px;
+		padding-bottom:5px;
+	}
+
+	#asana p, #plax2 p, #plax3 p, #dhwani p, #ahara p, #plax4 p {
+		padding-top:10px;
+		font-size:15px;
+	}
+
+	#plax2 .description, #plax4 .description {
+		margin-bottom:auto !important;
+		padding:80px 20px 0px 40px;
+		width:50%;
+	}
+
+	#plax3 .description {
+		margin-bottom:auto !important;
+		padding:80px 40px 0px 20px;
+		width:50%;
+	}
+
+	#ahara .aharacontent {
+		margin-bottom:auto !important;
+		padding:50px 120px !important;
+
+	}
+
+	#ahara .aharacontent .thumb {
+		width:15%;
+	}
+
+	#ahara .aharacontent p {
+		font-size:14px;
+	}
+
+	#dhwani {
+		transform:translate(100%, 0);
+		text-align:right;
+		padding:95px 45px 0px 40px !important;
+		height:1000px;
+	}
+
+	#dhwani h4 {
+		font-size:20px;
+		letter-spacing:2px;
+		text-transform: uppercase;
+		padding-bottom:5px;
+	}
+
+	#dhwani .dhwanicontent {
+		padding:0px !important;
+	}
+
+	#dhwani .dhwanicontent .col-12 {
+		padding:5px 5px 5px 15px!important;
+	}
+
+	#dhwani .dhwanicontent .thumb {
+		width:22%;
+		padding-right:0px;
+	}
+
+	#dhwani .dhwanicontent p {
+		font-size:13px;
+	}
+
+
+	#textoverlay {
+		padding:55px 55px 80px 55px !important;
+		position:absolute;
+		left:40%;
+		transform:translate(-55%, 75%);
+	}	
+
+}
