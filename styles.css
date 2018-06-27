@@ -24,6 +24,22 @@
  	background-color:white;
  }
 
+ #navbartoggle li {
+ 	padding:5px;
+ 	letter-spacing:2px;
+ }
+
+ #navbartoggle .navbar-brand {
+ 	padding:15px 0px;
+ }
+
+ #navbartoggle .dropdown-menu a {
+ 	font-size:0.9em;
+ 	letter-spacing:3px !important;
+ 	padding:10px 20px !important;
+ 	text-transform: uppercase;
+ }
+
  .parallax {
  	height:500px;
  	background-attachment:fixed;
@@ -32,6 +48,26 @@
  	background-repeat:no-repeat;
  	color:white;
  }
+
+ #aboutus .modal-body {
+ 	font-size:0.9em;
+ 	text-align: center;
+ }
+
+ #aboutus .modal-body h3 {
+ 	font-size:1.5em;
+ }
+
+ #aboutus .modal-body h5 {
+ 	font-size:1em;
+ 	padding:5px 25px;
+ }
+
+ #aboutus .modal-body h6 {
+ 	font-size:1.2em;
+ 	letter-spacing:1px;
+ }
+
 
  #plax1 {
  	background-image:url('img/img2.jpg');
@@ -73,11 +109,38 @@
 
  footer a {
  	color:#70545e;
+ 	text-transform: uppercase;
+ 	font-size:0.8em;
  }
 
  footer a:hover, a:focus {
  	color:#64413B;
  }
+
+ #testmodal .modal.left.fade.show .modal-dialog {
+    left: 0;
+}
+
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 1s step-end 8;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: transparent; }
+}
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -91,6 +154,21 @@
 	h6 {
 		font-size:20px;
 	}
+
+	#navbartoggle li {
+		font-size:0.8em;
+ 		padding:10px 0px;
+ 		letter-spacing:1px;
+ 	}
+
+	 #navbartoggle .navbar-brand {
+	 	padding:10px 10px;
+	 }
+
+	 #navbartoggle .dropdown-menu a {
+	 	font-size:0.8em;
+	 	padding:8px 16px !important;
+	 }
 
 	#plax1 h1 {
 		font-size:60px;
@@ -158,6 +236,7 @@
 		width:100%;
 		margin:-23% 0;
 	}
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -170,6 +249,21 @@
 	h6 {
 		font-size:25px;
 	}
+
+	#navbartoggle li {
+		font-size:0.9em;
+ 		padding:10px 5px;
+ 		letter-spacing:1px;
+ 	}
+
+	 #navbartoggle .navbar-brand {
+	 	padding:10px 10px;
+	 }
+
+	 #navbartoggle .dropdown-menu a {
+	 	font-size:0.8em;
+	 	padding:8px 16px !important;
+	 }
 
 	#plax1 h1 {
 		font-size:65px;
@@ -219,8 +313,6 @@
 	.parallax div:first-child {
 		padding:20px 45px;
 	}
-
-
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -233,6 +325,21 @@
 	h6 {
 		font-size:25px;
 	}
+
+	#navbartoggle li {
+		font-size:0.9em;
+ 		padding:10px 5px;
+ 		letter-spacing:1px;
+ 	}
+
+	 #navbartoggle .navbar-brand {
+	 	padding:10px 20px;
+	 }
+
+	  #navbartoggle .dropdown-menu a {
+	 	font-size:0.8em;
+	 	padding:8px 16px !important;
+	 }
 
 	#plax2 .description, #plax4 .description {
 		margin-bottom:auto !important;
@@ -299,10 +406,15 @@
 	
 	#textoverlay {
 		background-color:white;
-		padding:60px !important;
+		padding:50px !important;
 		position:absolute;
 		left:40%;
-		transform:translate(-55%, 110%);
+		transform:translate(-55%, 80%);
+	}
+
+	footer a {
+		margin:0px 15px !important;
+		letter-spacing: 2px;
 	}	
 	
 }

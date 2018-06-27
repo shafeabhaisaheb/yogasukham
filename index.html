@@ -17,39 +17,82 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
-  
+  	<script src="js/scrollreveal.min.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+    </script>
   </head>
 
   <body>
-  	
+
+  	 <!--
+  	<div class="content" id="test" style="position:absolute; top:15%; right:2%; width:200px; height:200px; padding:40px;"> 
+  		TEST !
+  		<button class="btn btn-primary" id="close">Close</button>
+  	</div>
+	-->
+
   	<nav class="navbar navbar-expand-sm navbar-light fixed-top">
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggle" aria-controls="navbartoggle" aria-expanded="false" aria-label="Toggle navigation">
    			 <span class="navbar-toggler-icon"></span>
   		</button>
-  		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+  		<div class="collapse navbar-collapse" id="navbartoggle">
     		<a class="navbar-brand" href="#">Yoga Sukham</a>
     		<ul class="navbar-nav ml-auto mt-2 mt-sm-0">
 	      		<li class="nav-item active">
 	        		<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 	      		</li>
-	     		<li class="nav-item">
-	        		<a class="nav-link" href="#">Link</a>
+	     		<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Tenets
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Āsana</a>
+			          <a class="dropdown-item" href="#">Dhyāna</a>
+			          <a class="dropdown-item" href="#">Āhāra</a>
+			          <a class="dropdown-item" href="#">Karma</a>
+			          <a class="dropdown-item" href="#">Dhwani</a>
+			          <a class="dropdown-item" href="#">Sevā</a>
+			        </div>
+			     </li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="#">Classes</a>
 	      		</li>
 	      		<li class="nav-item">
-	        		<a class="nav-link" href="#">Disabled</a>
+	        		<a class="nav-link" href="#">Schedule</a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="#">Teachers</a>
 	      		</li>
     		</ul>
   		</div>
 	</nav>
-   
       <div class="container-fluid parallax d-flex align-items-center justify-content-center" id="plax1">
       	<div class="text-center">
 	      	<h1>YogaSukham</h1>
 	      	<h4>Wellness Village</h4>
-	      	<button class="btn btn-lg btn-outline-light">About Us</button>
+	      	<button class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#aboutus">About Us</button>
 	     </div>
       </div>
+
+      <div class="modal fade" id="aboutus" tabindex="-1" role="dialog" aria-labelledby="aboutus" aria-hidden="true">
+  		<div class="modal-dialog modal-dialog-centered" role="document">
+   			<div class="modal-content d-flex">
+    			<button type="button" class="close ml-auto pr-3 pt-2" data-dismiss="modal" aria-label="Close">
+     				<span aria-hidden="true">&times;</span>
+   				</button>
+
+      			<div class="modal-body py-3 px-4">
+       				 <h3>Yoga (Union) Sukham (Joy)</h3>
+       				 <h5>Union of body, mind, and soul to attain happiness, joy, and peace</h5>
+       				 <p>YogaSukham has come into existence to offer a confluence of six practices to promote wellness within the community. We strive to combine the power of Āsana (Yoga poses), Dhyāna (Meditation), Āhāra (Nutrition), Karma (Personal Coaching), Dhwani (Music) and Sevā (Service) to bring wellness to people. We are passionate about making the world a healthier and more peaceful place - one person and one community at a time. We look forward to welcoming you to the Wellness Village!</p>
+					 <button class="btn btn-outline-dark mb-3" data-dismiss="modal">EXPLORE</button>
+      			</div>
+	  		</div>
+		</div>
+	</div>
 
       <div class="container-fluid break text-center p-3">
       	लोका: समस्ता: सुखिनो भवन्तु
@@ -57,10 +100,10 @@
 
       <div class="container-fluid content p-5" id="asana">
         <div class="row">
-        	<div>
+        	<div class="descrip">
         		<h2>Āsana</h2>
         		<i><h6>आसना</h6></i>
-        		<p> “Asana is the practice which unites the body with mind and the mind with soul," said Guru BKS Iyengar.
+        		<p> “Āsana is the practice which unites the body with mind and the mind with soul," said Guru BKS Iyengar.
 					We teach yoga in the Iyengar tradition--a practice intended to bring alignment, strength, flexibility, and awareness--using various props to make poses more accessible and effective.
 
 					Classes begin at 6:00 AM with <i>Yoga at Sunrise</i>.
@@ -87,7 +130,7 @@
         	<div class="d-none">
         		<img class="mw-100" src="img/pictabla.png">
         	</div>
-        	<div>
+        	<div class="descrip">
         		<h1>Dhwani</h1>
         		<i><h6>ध्वनि</h6></i>
         		<p> Music is an eternal language reaching across boundaries, penetrating walls, touching souls, making hearts dance, feet tap, and minds meditate. Through music, we experience joy and peace while exploring our creativity, for there is no music more perfect than the beats and notes within each of us. 
@@ -182,7 +225,7 @@
       	</div>
       </div>
 		<div class="container-fluid break text-center p-3">
-      	May all beings everywhere have happiness and peace.
+      	<p>May all beings everywhere have happiness and peace.</p>
       </div>
 
       <footer class="d-sm-none d-flex justify-content-center">
@@ -205,7 +248,53 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script>
 	  $("body").on('click','.readmore',function(){ $(this).addClass('hidden'); });
+	  $("body").on('click','#close', function(){ $('#test').addClass('hidden'); });
 	</script>
+	<script>
 
+		
+		sr.reveal('#plax1 h1', {
+			duration:1500,
+			origin:'top',
+			easing:'ease-in-out'
+		});
+
+		sr.reveal('#plax1 h4, #plax1 button', {
+			duration:2500,
+			origin:'top',
+			easing:'ease-in-out'
+		});
+
+		sr.reveal('#asana .descrip, #plax3 .description', {
+			duration:1000,
+			origin:'left',
+			easing:'ease-in-out'
+		});
+
+		sr.reveal('#plax2 .description, #dhwani .descrip, #plax4 .description', {
+			duration:1000,
+			origin:'right',
+			easing:'ease-in-out'
+		});
+
+		sr.reveal('#dhwani .dhwanicontent', {
+			duration:1500,
+			origin:'bottom',
+			distance:'250px'
+		});
+
+		sr.reveal('#textoverlay h2, .aharacontent', {
+			duration:1500,
+			origin:'left',
+			easing:'ease-in-out'
+		});
+
+		sr.reveal('#textoverlay h6, #textoverlay p', {
+			duration:2000,
+			origin:'left',
+			easing:'ease-in-out'
+		});
+
+	</script>
   </body>
 </html>
