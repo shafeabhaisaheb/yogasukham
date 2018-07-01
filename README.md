@@ -2,5 +2,5 @@
 
 <img src="yogasukhammobile.gif">
 <br>
-<img src="yogasukhamdesktop.gif">
+<img src="yogadesktop.gif">
 
